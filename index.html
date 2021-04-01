@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>www.pure-editor.it</title>
+</head>
+<body>
+    <textarea name="html-input" id="html-input" cols="30" rows="10" placeholder="codice html"></textarea><br>
+    <textarea name="css-input" id="css-input" cols="30" rows="10" placeholder="codice css"></textarea><br>
+    <textarea name="javascript-input" id="javascript-input" cols="30" rows="10" placeholder="codice javascript"></textarea>
+
+    <iframe src="" frameborder="0" id="output"></iframe><br>
+    <iframe src="" frameborder="0" id="debug-output"></iframe>
+    <div id="footer" class="footer">
+        <ul id="list" class="list">
+            <li id="menu" class="menu">Menu</li>
+            <li id="close-menu" class="close-menu hide" style="cursor: pointer;">Menu</li><br>
+            <li id="about" class="about" style="margin-left: 140px; cursor: pointer;">About</li>
+            <li id="close-about" class="close-about hide" style="margin-left: 140px; cursor: pointer;">About</li><br>
+            <li id="copyright" class="copyright" style="margin-left: 340px; cursor: pointer;"><b>© Copyright</b> - tutti i diritti riservati</li>
+            <li id="close-copyright" class="close-copyright hide" style="margin-left: 340px; cursor: pointer;"><b>© Copyright</b> - tutti i diritti riservati</li><br>
+        </ul>
+        <div id="about-section" class="about-section hide"><p>In questo editor è possibile usare codice html, css e javascript nella forma base, cioè 
+            senza librerie e altre aggiunte; è possibile visualizzare dei "pre-fabbricati", cioè dei modelli già pronti per i vari linguaggi,
+            ovviamente creati da me. <br><br>
+            Disponibile per computer, tablet e telefono<br><br>
+            Per informazioni sul <b>CopyRight</b> visualizzare la sezione apposita, cliccando sulla voce CopyRight infondo alla pagina.
+        </p></div>
+        <div id="copyright-section" class="copyright-section hide"><p>
+            I codici pre-fabbricati POSSONO ESSERE UTILIZZATI ALTROVE,<br> PURCHÉ VENGA ESPLICITAMENTEM DICHIARATA LA PROVENIENZA DI TALE CONTENUTO, (cioè in questa pagina, inserendone il collegamento,
+            per comodità fornito anche nei suggerimenti dell'html)<br><br> !!IO NON HO ALCUNA
+            RESPONSABILITÀ PER OGNI
+            VIOLAZIONE DI QUALSIASI LEGGE!!
+        </p></div>
+        <div id="opened-menu" class="opened-menu hide">
+            <ul id="menu-list" class="menu-list">
+                <li id="html-wispers" class="html-wispers">suggerimenti html</li>
+                <li id="hide-html-wispers" class="hide-html-wispers hide">suggerimenti html</li><br><br><br>
+                <li id="css-wispers" class="css-wispers">suggerimenti css</li>
+                <li id="hide-css-wispers" class="hide-css-wispers hide">suggerimenti css</li><br><br><br>
+                <li id="javascript-wispers" class="javascript-wispers">suggerimenti javascript</li>
+                <li id="hide-javascript-wispers" class="hide-javascript-wispers hide">suggerimenti javascript</li><br>
+            </ul>
+            <textarea id="h-wispers" class="h-wispers hide" rows="50" cols="100" readonly>
+                Base html code:
+
+                <!DOCTYPE html>
+                <html lang="it">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                </head>
+                <body>
+                    
+                </body>
+                </html>
+
+
+
+                <button id="classic-button" class="classic-button">bottone</button>
+
+                <h1>Titolo</h1>
+
+                <p>Paragrafo</p>
+
+                <p class="paragrafo">paragrafo con una classe</p>
+
+
+
+                <!-- collegamento a questosito LEGGERE IL COPYTRIGHT PER MAGGIORI INFORMAZIONI --> 
+                
+                
+                <a href="link pagina">www.pure-editor.it</a>
+            </textarea>
+            <textarea id="c-wispers" class="c-wispers hide" rows="50" cols="100" readonly>
+
+                * {
+                    background: yellow;
+                    text-align: center;
+                    color: grey;
+                }
+
+                body {
+                    background: red;
+                }
+
+                body:hover {
+                    background: linear-gradient(to right, yellow, red)
+                }
+
+                .classic-button {
+                    border-radius: 20px;
+                    background: red;
+                    color: white;
+                }
+
+                ::selection {
+                    background: yellow;
+                    color: white
+                };
+
+                ::selection {
+                    background: yellow;
+                }
+
+                ::selection {
+                    color: white;
+                }
+
+                p.paragrafo::selection {
+                    background: grey;
+                    color: red;
+                }
+            </textarea>
+            <textarea id="j-wispers" class="j-wispers hide" rows="50" cols="100" readonly>
+                const classicButton = document.getElementById('classic-button');
+
+                classicButton.addEventListener('click', () => {
+                    alert('bottone cliccato')
+                })
+
+                alert('alert')
+
+                console.log('apri la console per vedere questo testo')
+            </textarea>
+        </div>
+    </div>
+</body>
+</html>
